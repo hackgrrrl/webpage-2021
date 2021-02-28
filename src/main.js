@@ -7,7 +7,14 @@ Vue.config.productionTip = false
 
 Vue.use(Vuex)
 
+const store = new Vuex.Store({
+  state: {},
+  getters:{},
+  mutations: {}
+})
+
 new Vue({
+  store,
   vuetify,
   render: h => h(App)
 }).$mount('#app')
