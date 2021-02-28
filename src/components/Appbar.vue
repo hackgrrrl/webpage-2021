@@ -1,5 +1,5 @@
 <template lang="pug">
-v-container
+div
   v-app-bar
     v-img.shrink.mr-2(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKZOiUFIa5WBTcmlNeUzEXCr6AW9m0HBzIAQ&usqp=CAU' transition='scale-transition' width='40')
     v-tabs(centered)
