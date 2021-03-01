@@ -4,12 +4,14 @@
     v-main
       Home
       About
+      PreviousEvents
 </template>
 
 <script>
 import Appbar from '@/components/Appbar';
 import Home from '@/components/Home'
 import About from '@/components/About'
+import PreviousEvents from '@/components/PreviousEvents'
 
 export default {
   name: 'App',
@@ -17,7 +19,8 @@ export default {
   components: {
     Appbar,
     Home,
-    About
+    About,
+    PreviousEvents
   },
   
   data: () => ({

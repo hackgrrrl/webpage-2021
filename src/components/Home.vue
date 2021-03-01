@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  v-img(src="https://imgsapp2.correiobraziliense.com.br/app/noticia_127983242361/2018/03/15/666157/20180314182254955609e.jpg")
+  v-img.logo(src="https://sobresagas.com.br/wp-content/uploads/2020/12/winxsagas.jpg")
 </template>
 
 <script>
@@ -12,4 +12,7 @@ div
     }),
   }
 </script>
-<style lang="sass" scoped> </style>
+<style lang="sass" scoped>
+.logo
+  height: 35rem
+</style>
