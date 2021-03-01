@@ -31,5 +31,5 @@ div
 .title
   color: red
 .img
-  height: 20rem
+  height: 27.875rem
 </style>

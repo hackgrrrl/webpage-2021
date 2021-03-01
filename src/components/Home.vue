@@ -14,5 +14,5 @@ div
 </script>
 <style lang="sass" scoped>
 .logo
-  height: 35rem
+  height: 34.75rem
 </style>
