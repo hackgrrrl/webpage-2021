@@ -28,5 +28,9 @@ export default {
   }),
 };
 </script>
+<style  lang="sass">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap')
 
-<style  lang="sass" scoped></style>
+#app
+  font-family: 'Montserrat', sans-serif
+</style>
