@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  H1(align="center") https://vuetifyjs.com/en/components/carousels/
+  //- H1(align="center") https://vuetifyjs.com/en/components/carousels/
 </template>
 
 <script>
