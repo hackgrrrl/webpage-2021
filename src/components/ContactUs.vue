@@ -4,18 +4,19 @@ div.about
     v-col(cols='3' v-if='!isMobile')
       v-img.wave-img(src="../assets/pt2_1.png")
     v-col(style='text-align: center;')
-      v-img.xs-wave-img(v-if='isMobile' src='../assets/pt2_1.png')
-      h1.topic o que é o Hack GRRRL?
-      p 
-        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      v-img.xs-ball-img(v-if='isMobile' src='../assets/pt2_2.png')
-      h1.topic nossa missão
-      p 
-        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      h1 fale conosco!
+      p Tem alguma dúvida? Gostaria de nos patrocinar? Deixe aqui suas informações para entrarmos em contato assim que possível!
+      v-row
+        v-col
+          v-text-field(v-model="form.name" label="Nome" outlined color="#6FDDD5")
+        v-col
+          v-text-field(v-model="form.email" label="Email" outlined color="#6FDDD5")
+        v-col
+          v-text-field(v-model="form.phone" label="Telefone (opcional)" outlined color="#6FDDD5")
+      v-row
+        v-textarea(v-model="form.description" label="Digite sua mensagem aqui..." outlined auto-grow rows="4" )
+      v-row
+        v-btn(depressed color="#FF99CC") Enviar
     v-col(cols='3' v-if='!isMobile')
       v-img.ball-img(src="../assets/pt2_2.png")
 </template>
@@ -25,7 +26,12 @@ div.about
     name: 'About',
 
     data: () => ({
-      //
+      form:{
+        name: '',
+        email: '',
+        phone: '',
+        description:''
+      }
     }),
     computed: {
       isMobile() {
@@ -34,10 +40,7 @@ div.about
     }
   }
 </script>
-<style lang="sass" scoped> 
-.topic
-  margin-top: 2vw
-  color: #101111
+<style lang="sass" scoped>
 .wave-img
   position: relative
   width: 42%
@@ -50,9 +53,6 @@ div.about
   height: auto
   top: 10vh
   left: 6.1vw
-p
-  margin-top: 1vw
-  color: #707070
 .xs-wave-img
   position: relative
   width: 10%
