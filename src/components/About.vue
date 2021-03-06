@@ -1,21 +1,21 @@
 <template lang="pug">
-div
+div.about
   v-row(align="center")
-    v-col
-      v-img.img(src="https://imagens.canaltech.com.br/celebridades/30.400.jpg")
-    v-col( justify="center")
-      h3.title o que é o Hack GRRRL?
+    v-col(cols='3' v-if='!isMobile')
+      v-img.wave-img(src="../assets/pt2_1.png")
+    v-col(style='text-align: center;')
+      h1.topic o que é o Hack GRRRL?
       p 
         | Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
         | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      h3.title nossa missão
+      h1.topic nossa missão
       p 
         | Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
         | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-    v-col
-      v-img.img(src="https://imagens.canaltech.com.br/celebridades/30.400.jpg" )
+    v-col(cols='3' v-if='!isMobile')
+      v-img.ball-img(src="../assets/pt2_2.png")
 </template>
 
 <script>
@@ -25,11 +25,30 @@ div
     data: () => ({
       //
     }),
+    computed: {
+      isMobile() {
+        return this.$vuetify.breakpoint.xsOnly
+      }
+    }
   }
 </script>
 <style lang="sass" scoped> 
-.title
-  color: red
-.img
-  height: 27.875rem
+.topic
+  margin-top: 2vw
+  color: #101111
+.wave-img
+  position: relative
+  width: 42%
+  height: auto
+  top: 1vw
+  left: 18.9%
+.ball-img
+  position: relative
+  width: 25%
+  height: auto
+  top: 10vh
+  left: 6.1vw
+p
+  margin-top: 1vw
+  color: #707070
 </style>
