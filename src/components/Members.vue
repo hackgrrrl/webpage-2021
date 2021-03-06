@@ -3,10 +3,43 @@ div.members
     v-img.circle-img(src='../assets/pt4_1.png')
     v-img.hill-img(src='../assets/pt4_2.png')
     h1.topic quem faz
-    v-row
-        v-col(v-for='member in members' :key='member.name')
-            v-avatar(size='125')
-                v-img(:src='member.picture')
+    v-row(justify='center')
+        v-col
+            v-avatar(:size='isMobile? 100 : 200')
+                img(src='../assets/members/bea.jpg')
+            span
+                h2 Beatriz
+                p Desenvolvedora
+        v-col
+            v-avatar(:size='isMobile? 100 : 200')
+                img(src='../assets/members/bea.jpg')
+            span
+                h2 Carolina
+                p Desenvolvedora
+        v-col
+            v-avatar(:size='isMobile? 100 : 200')
+                img(src='../assets/members/lav.jpg')
+            span
+                h2 Lavínia
+                p Co-fundadora
+        v-col
+            v-avatar(:size='isMobile? 100 : 200')
+                img(src='../assets/members/bea.jpg')
+            span
+                h2 Mayara
+                p  ?
+        v-col
+            v-avatar(:size='isMobile? 100 : 200')
+                img(src='../assets/members/nat.jpg')
+            span
+                h2 Nathália
+                p Co-fundadora
+        v-col
+            v-avatar(:size='isMobile? 100 : 200')
+                img(src='../assets/members/bea.jpg')
+            span
+                h2 Viviane
+                p UX/UI designer & Ilustradora
 
     
 </template>
@@ -16,26 +49,12 @@ export default {
     name: 'About',
 
     data: () => ({
-      members: [
-          {
-              name: 'Beatriz',
-              picture: './assets/members/bea.jpg',
-              description: 'teste'
-          },
-          {
-              name: 'Lavínia',
-              picture: './assets/members/lav.jpg',
-              description: 'Co-founder'
-          }
-      ]
     }),
 
-    mounted () {
-      let context = require.context('../assets/members/', false, /\.jpg$/)
-      for (let member in this.members) {
-          member.url = context(member.picture)
+    computed: {
+      isMobile() {
+        return this.$vuetify.breakpoint.xsOnly
       }
-      console.log(this.members)
     }
 }
 </script>
@@ -46,6 +65,7 @@ export default {
     text-align: center
 .topic
     padding-top: 5vh
+    padding-bottom: 8vh
     color: #101010
 .circle-img
     position: absolute
