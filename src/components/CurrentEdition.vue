@@ -9,7 +9,7 @@ div.home
 
 <script>
   export default {
-    name: 'Home',
+    name: 'CurrentEdtion',
 
     data: () => ({
       //
