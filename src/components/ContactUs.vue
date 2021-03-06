@@ -1,5 +1,5 @@
 <template lang="pug">
-div.about
+div.contactUs
   v-row(align="center")
     v-col(cols='3' v-if='!isMobile')
       v-img.wave-img(src="../assets/pt2_1.png")
