@@ -1,11 +1,10 @@
 <template lang="pug">
 div.home
-  span
-    v-img.ball-image(src='../assets/pt1_1.png')
-    v-img.triangle-image(src='../assets/pt1_2.png')
-    v-img.logo(src='../assets/titulo.png')
-    v-img.wave-image(src='../assets/pt1_3.png')
-    v-img.hill-image(src='../assets/pt1_4.png')
+  v-img.ball-image(src='../assets/pt1_1.png')
+  v-img.triangle-image(src='../assets/pt1_2.png')
+  v-img.logo(src='../assets/titulo.png')
+  v-img.wave-image(src='../assets/pt1_3.png')
+  v-img.hill-image(src='../assets/pt1_4.png')
 </template>
 
 <script>
