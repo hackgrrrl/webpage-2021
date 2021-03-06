@@ -5,6 +5,7 @@
       Home
       About
       PreviousEvents
+      Members
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import Appbar from '@/components/Appbar';
 import Home from '@/components/Home'
 import About from '@/components/About'
 import PreviousEvents from '@/components/PreviousEvents'
+import Members from '@/components/Members'
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
     Appbar,
     Home,
     About,
-    PreviousEvents
+    PreviousEvents,
+    Members
   },
   
   data: () => ({
