@@ -6,6 +6,8 @@
       About
       PreviousEvents
       Members
+      CurrentEdition
+      ContactUs
 </template>
 
 <script>
@@ -14,6 +16,9 @@ import Home from '@/components/Home'
 import About from '@/components/About'
 import PreviousEvents from '@/components/PreviousEvents'
 import Members from '@/components/Members'
+import CurrentEdition from '@/components/CurrentEdition'
+import ContactUs from '@/components/ContactUs'
+
 
 export default {
   name: 'App',
@@ -23,7 +28,9 @@ export default {
     Home,
     About,
     PreviousEvents,
-    Members
+    Members,
+    CurrentEdition,
+    ContactUs
   },
   
   data: () => ({
