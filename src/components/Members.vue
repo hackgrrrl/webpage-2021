@@ -3,7 +3,7 @@ div.members
     v-img.circle-img(src='../assets/pt4_1.png')
     v-img.hill-img(src='../assets/pt4_2.png')
     h1.topic quem faz
-    v-row(justify='center')
+    v-row.px-6(justify='center')
         v-col
             v-avatar(:size='isMobile? 100 : 200')
                 img(src='../assets/members/bea.jpg')
