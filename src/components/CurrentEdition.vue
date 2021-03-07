@@ -1,22 +1,21 @@
 <template lang="pug">
 div.current-edtion
   v-row(align="center" justify="center")
-    v-col
-      v-img.ball-image(src='../assets/pt1_1.png')
-      v-img.triangle-image(src='../assets/pt1_2.png')
-    v-col
-      h2.text edição 2020
-      h1.text informações em breve!!
+    v-col(v-if='!isMobile' cols='2')
+      v-img.hill-img(src='../assets/pt5_1.png')
+    v-col.text
+      v-img.xs-hill-img(v-if='isMobile' src='../assets/pt5_1.png')
+      h2.edition edição 2020
+      h1.informations informações em breve!!
       v-spacer
-      p.text Quer receber as novidades em primeira mão? Assine nossa newsletter!
-      v-row
-        v-col
-
-        v-col
-          v-btn(depressed color="#FF99CC") Enviar
-    v-col
-      v-img.wave-image(src='../assets/pt1_3.png')
-      v-img.hill-image(src='../assets/pt1_4.png')
+      p Quer receber as novidades em primeira mão? Assine nossa newsletter!
+      v-row(align="center" justify="center")
+        v-col(:cols='isMobile ? 7 : 5')
+          v-text-field.white-border(value='hackgrrrl@email.com' solo flat hide-details disabled background-color='#101111' dark)
+        v-col(:cols='isMobile ? 3 : 1')
+          v-btn(depressed color="#FF99CC" style='margin: 0') Enviar
+    v-col(v-if='!isMobile' cols='2')
+      v-img.wave-img(src='../assets/pt5_2.png')
 </template>
 
 <script>
@@ -26,45 +25,46 @@ div.current-edtion
     data: () => ({
       //
     }),
+
+    computed: {
+      isMobile() {
+        return this.$vuetify.breakpoint.xsOnly
+      }
+    }
   }
 </script>
 <style lang="sass" scoped>
 .current-edtion
-  width: 100%
   position: relative
-  height: 38.4vw
   background-color: #101111
+.edition
+  font-size: 2rem
+.informations
+  margin: 5vh
+  font-size: 2.5rem
 .text
+  margin-top: 2vw
+  margin-bottom: 1vw
+  text-align: center
   color: #FFFFFF
-.ball-image
+.hill-img
   position: absolute
-  width: 8.7%
+  width: 15%
   height: auto
-  top: 5.9vw
-  left: 4.98%
-.triangle-image
+  left: 0
+  top: 0
+.wave-img
   position: absolute
-  width: 7.9%
-  height: auto
-  left: 12.59%
-  top: 26.3vw
-.logo
-  position: absolute
-  width: 45%
-  height: auto
-  left: 27.37%
-  top: 8.61vw
-.wave-image
-  position: absolute
-  width: 14.6%
-  height: auto
-  left: 73.94%
-  top: 5.6vw
-.hill-image
-  position: absolute
-  width: 22.6%
+  width: 8%
   height: auto
   right: 0%
-  top: 18.2vw
-
+  top: 10vh
+.xs-hill-img
+  position: absolute
+  width: 15%
+  height: auto
+  left: 0
+  top: 0
+.white-border
+  border: 3px solid #FFF
 </style>
