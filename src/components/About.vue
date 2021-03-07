@@ -7,9 +7,11 @@ div.about
       v-img.xs-wave-img(v-if='isMobile' src='../assets/pt2_1.png')
       h1.topic o que é o Hack GRRRL?
       p 
-        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        | A Hack Grrrl é uma hackathon de maioria feminina, evento para desenvolvimento de aplicações
+        | com duração entre 24 a 48 horas, que busca reunir equipes multidisciplinares para resolver um problema
+        | de acordo com o tema apresentado. Fundada 2019 em Recife-PE, sua primeira edição contou com 26 participantes
+        | de forma presencial para criação de soluções em Igualdade de Gênero.
+        | Neste ano será realizada sua primeira versão online, esperamos contar com sua presença!
       v-img.xs-ball-img(v-if='isMobile' src='../assets/pt2_2.png')
       h1.topic nossa missão
       p 
