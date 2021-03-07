@@ -1,9 +1,9 @@
 <template lang="pug">
-div.previous-events
+v-container.ma-0#previous-events(fluid)
   v-row
-    v-col.pa-0(cols='3' v-if='!isMobile')
+    v-col.pa-0(v-if='!isMobile' lg='3')
       v-img.hill-img(src='../assets/pt3_1.png')
-    v-col.pa-0(style='position: relative')
+    v-col.pa-0(cols='12' lg='6' style='position: relative')
       v-img.xs-hill-img(v-if='isMobile' src='../assets/pt3_1.png')
       h1.topic edições anteriores
       carousel-3d(
@@ -13,15 +13,22 @@ div.previous-events
         border='0'
         display='3'
         )
-        slide(v-for='(picture, i) in pictures' :index='i' :key='i')
-          template(slot-scope="{ index, isCurrent, leftIndex, rightIndex }")
-            v-img(:src='picture' :data-index='index')
-        //- slide(v-for='i in 7' :index='i')
-        //-   v-img(:src='`../assets/pictures/${i}.jpg`')
-    v-col(cols='3' v-if='!isMobile')
+        slide(:index='0')
+          v-img(src='../assets/pictures/0.jpg')
+        slide(:index='1')
+          v-img(src='../assets/pictures/1.jpg')
+        slide(:index='2')
+          v-img(src='../assets/pictures/2.jpg')
+        slide(:index='3')
+          v-img(src='../assets/pictures/3.jpg')
+        slide(:index='4')
+          v-img(src='../assets/pictures/4.jpg')
+        slide(:index='5')
+          v-img(src='../assets/pictures/5.jpg')
+        slide(:index='6')
+          v-img(src='../assets/pictures/6.jpg')
+    v-col(v-if='!isMobile' lg='3')
       v-img.triangle-img(src='../assets/pt3_2.png')
-
-  //- H1(align="center") https://vuetifyjs.com/en/components/carousels/
 </template>
 
 <script>
@@ -44,7 +51,7 @@ div.previous-events
         return this.$vuetify.breakpoint.mdAndDown
       },
       pictureWidth () {
-        return (this.$vuetify.breakpoint.width * 0.35)
+        return Math.max((this.$vuetify.breakpoint.width * 0.35), 300)
       },
       pictureHeight () {
         return (this.pictureWidth * 0.66)
@@ -61,7 +68,7 @@ div.previous-events
   }
 </script>
 <style lang="sass" scoped>
-.previous-events
+#previous-events
   text-align: center
   background-color: #101111
 .hill-img

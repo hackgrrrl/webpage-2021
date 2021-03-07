@@ -47,7 +47,7 @@ div.home
   width: 22.6%
   height: auto
   right: 0%
-  top: 18.2vw
+  bottom: 0%
 .home
   width: 100%
   position: relative

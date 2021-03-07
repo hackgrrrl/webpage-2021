@@ -1,9 +1,9 @@
 <template lang="pug">
-div.about
+v-container.ma-0#about(fluid ref='about')
   v-row(align="center")
-    v-col(cols='3' v-if='!isMobile')
+    v-col(v-if='!isMobile' cols='3')
       v-img.wave-img(src="../assets/pt2_1.png")
-    v-col(style='text-align: center;')
+    v-col(style='text-align: center;' cols='12' sm='6')
       v-img.xs-wave-img(v-if='isMobile' src='../assets/pt2_1.png')
       h1.topic o que é o Hack GRRRL?
       p 
@@ -18,7 +18,7 @@ div.about
         | Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
         | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-    v-col(cols='3' v-if='!isMobile')
+    v-col(v-if='!isMobile' cols='3')
       v-img.ball-img(src="../assets/pt2_2.png")
 </template>
 
@@ -36,9 +36,10 @@ div.about
     }
   }
 </script>
-<style lang="sass" scoped> 
+<style lang="sass" scoped>
+#about
+  padding-top: 2vw
 .topic
-  margin-top: 2vw
   color: #101111
 .wave-img
   position: relative

@@ -1,21 +1,21 @@
 <template lang="pug">
-div.members
+v-container.ma-0.pa-0#members(fluid)
     v-img.circle-img(src='../assets/pt4_1.png')
     v-img.hill-img(src='../assets/pt4_2.png')
     h1.topic quem faz
-    v-row.px-6(justify='center')
+    v-row.px-6.ma-0(justify='center')
         v-col
             v-avatar(:size='isMobile? 100 : 200')
                 img(src='../assets/members/bea.jpg')
             span
                 h2 Beatriz
-                p Desenvolvedora
+                p ?
         v-col
             v-avatar(:size='isMobile? 100 : 200')
-                img(src='../assets/members/bea.jpg')
+                img(src='../assets/members/carol.jpg')
             span
                 h2 Carolina
-                p Desenvolvedora
+                p ?
         v-col
             v-avatar(:size='isMobile? 100 : 200')
                 img(src='../assets/members/lav.jpg')
@@ -24,7 +24,7 @@ div.members
                 p Co-fundadora
         v-col
             v-avatar(:size='isMobile? 100 : 200')
-                img(src='../assets/members/bea.jpg')
+                img(src='../assets/members/may.jpg')
             span
                 h2 Mayara
                 p  ?
@@ -40,8 +40,6 @@ div.members
             span
                 h2 Viviane
                 p UX/UI designer & Ilustradora
-
-    
 </template>
 
 <script>
@@ -60,7 +58,8 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.members
+#members
+    width: 100%
     position: relative
     text-align: center
 .topic
@@ -77,6 +76,6 @@ export default {
     position: absolute
     width: 12%
     height: auto
-    top: 1.7vh
+    top: 0%
     right: 0vw
 </style>

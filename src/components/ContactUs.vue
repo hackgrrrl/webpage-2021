@@ -1,24 +1,24 @@
 <template lang="pug">
-div.contact-us
+v-container#contact-us(fluid)
   v-row(align="center")
-    v-col(cols='2' v-if='!isMobile')
+    v-col(sm='2' v-if='!isMobile')
       v-img.triangle-img(src="../assets/pt6_1.png")
-    v-col(style='text-align: center;')
+    v-col(style='text-align: center;' cols='12' sm='8')
       h1 fale conosco!
       p Tem alguma dúvida? Gostaria de nos patrocinar? Deixe aqui suas informações para entrarmos em contato assim que possível!
-      v-row
-        v-col
-          v-text-field.blue-border(v-model="form.name" label="Nome" solo flat hide-details color="#6FDDD5")
-        v-col
-          v-text-field.blue-border(v-model="form.email" label="Email" solo flat hide-details color="#6FDDD5")
-        v-col
-          v-text-field.blue-border(v-model="form.phone" label="Telefone (opcional)" solo flat hide-details color="#6FDDD5")
-      v-row
-        v-col(cols='12')
-          v-textarea.blue-border(v-model="form.description" label="Digite sua mensagem aqui..." solo flat auto-grow rows="4")
-      v-row.pink-btn(justify='center')
-        v-btn(depressed color="#FF99CC") Enviar
-    v-col(cols='2' v-if='!isMobile')
+      v-container
+        v-row
+          v-col(cols='12' sm='4')
+            v-text-field.blue-border(v-model="form.name" label="Nome" solo flat hide-details color="#6FDDD5")
+          v-col(cols='12' sm='4')
+            v-text-field.blue-border(v-model="form.email" label="Email" solo flat hide-details color="#6FDDD5")
+          v-col(cols='12' sm='4')
+            v-text-field.blue-border(v-model="form.phone" label="Telefone (opcional)" solo flat hide-details color="#6FDDD5")
+          v-col(cols='12')
+            v-textarea.blue-border(v-model="form.description" label="Digite sua mensagem aqui..." solo flat auto-grow rows="4")
+        v-row.pink-btn(justify='center')
+          v-btn(depressed color="#FF99CC") Enviar
+    v-col(sm='2' v-if='!isMobile')
       v-img.wave-img(src="../assets/pt6_2.png")
 </template>
 
@@ -42,10 +42,11 @@ div.contact-us
   }
 </script>
 <style lang="sass" scoped>
-.contact-us
+#contact-us
   position: relative
   margin-top: 2vw
   margin-bottom: 1vw
+  padding-bottom: 4vh
 .triangle-img
   position: absolute
   width: 4.5%
@@ -56,8 +57,8 @@ div.contact-us
   position: absolute
   width: 6%
   height: auto
-  top: 38vh
-  left: 12%
+  top: 20vw
+  left: 10%
 .blue-border
   border: 3px solid #6FDDD5
 .pink-btn

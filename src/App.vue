@@ -2,12 +2,20 @@
   v-app
     Appbar
     v-main
-      Home
-      About
-      PreviousEvents
-      Members
-      CurrentEdition
-      ContactUs
+      v-row
+        Home
+      v-row
+        About
+      v-row
+        PreviousEvents
+      v-row
+        Members
+      v-row
+        CurrentEdition
+      v-row
+        ContactUs
+      v-row
+        Footer
 </template>
 
 <script>
@@ -18,6 +26,7 @@ import PreviousEvents from '@/components/PreviousEvents'
 import Members from '@/components/Members'
 import CurrentEdition from '@/components/CurrentEdition'
 import ContactUs from '@/components/ContactUs'
+import Footer from '@/components/Footer'
 
 
 export default {
@@ -30,7 +39,8 @@ export default {
     PreviousEvents,
     Members,
     CurrentEdition,
-    ContactUs
+    ContactUs,
+    Footer
   },
   
   data: () => ({
@@ -42,5 +52,6 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap')
 
 #app
+  widht: 100%
   font-family: 'Montserrat', sans-serif
 </style>
