@@ -36,7 +36,7 @@ div.members
                 p Co-fundadora
         v-col
             v-avatar(:size='isMobile? 100 : 200')
-                img(src='../assets/members/bea.jpg')
+                img(src='../assets/members/viv.jpg')
             span
                 h2 Viviane
                 p UX/UI designer & Ilustradora
