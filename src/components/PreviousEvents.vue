@@ -8,8 +8,8 @@ div.previous-events
       h1.topic edições anteriores
       carousel-3d(
         :count="pictures.length"
-        :height='isMobile ? 126 : 230'
-        :width='isMobile ? 200 : 360'
+        :height='pictureHeight'
+        :width='pictureWidth'
         border='0'
         display='3'
         )
@@ -37,10 +37,17 @@ div.previous-events
       Carousel3d,
       Slide
     },
+    
 
     computed: {
       isMobile() {
-        return this.$vuetify.breakpoint.xsOnly
+        return this.$vuetify.breakpoint.mdAndDown
+      },
+      pictureWidth () {
+        return (this.$vuetify.breakpoint.width * 0.35)
+      },
+      pictureHeight () {
+        return (this.pictureWidth * 0.66)
       }
     },
 
@@ -50,7 +57,6 @@ div.previous-events
         console.log(key)
         this.pictures.push(context(key))
       });
-      console.log(this.pictures)
     }
   }
 </script>
