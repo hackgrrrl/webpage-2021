@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  v-app-bar(v-if='!isMobile' color='#101111' dark)
+  v-app-bar(v-if='!isMobile' color='#101111' dark fixed)
     v-img.mr-2(src='../assets/icon_pc.svg' transition='scale-transition' width='40')
     // TODO: text in v-tab to lowercase
     // TODO: put  'fale conosto' on the right
