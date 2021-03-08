@@ -9,11 +9,19 @@ v-container#current-edtion(fluid)
       h1.informations informações em breve!!
       v-spacer
       p Quer receber as novidades em primeira mão? Assine nossa newsletter!
-      v-row(align="center" justify="center")
-        v-col(cols='12' sm='7')
-          v-text-field.white-border(value='hackgrrrl@email.com' solo flat hide-details disabled background-color='#101111' dark)
-        v-col(cols='3' sm='1')
-          v-btn(depressed color="#FF99CC" style='margin: 0') Enviar
+      div#mc_embed_signup
+        form.validate#mc-embedded-subscribe-form(
+          action='https://gmail.us20.list-manage.com/subscribe/post?u=ab3ae93ebf89a83bd05d0b17d&amp;id=ce2d825da7'
+          method='post'
+          name='mc-embedded-subscribe-form'
+          target='_blank'
+          novalidate
+        )
+          v-row(align="center" justify="center")
+            v-col(cols='12' sm='7')
+              v-text-field.white-border.email#mce-EMAIL(name='EMAIL' label='exemplo@email.com' solo flat hide-details background-color='#101111' dark)
+            v-col(cols='3' sm='1')
+              v-btn(depressed color="#FF99CC" style='margin: 0' type='submit' name='subscribe') Enviar
     v-col(v-if='!isMobile' sn='2')
       v-img.wave-img(src='../assets/pt5_2.png')
 </template>
@@ -34,6 +42,9 @@ v-container#current-edtion(fluid)
   }
 </script>
 <style lang="sass" scoped>
+#mc_embed_signup
+  clear: left 
+  width: 100%
 #current-edtion
   width: 100%
   position: relative
