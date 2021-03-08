@@ -14,7 +14,7 @@ v-container.ma-0#previous-events(fluid)
         display='3'
         )
         slide(:index='0')
-          v-img(src='../assets/pictures/0.jpg')
+          iframe(:width="pictureWidth" :height="pictureHeight" src="https://www.youtube.com/embed/9EmLlBMHrFQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
         slide(:index='1')
           v-img(src='../assets/pictures/1.jpg')
         slide(:index='2')
@@ -27,6 +27,9 @@ v-container.ma-0#previous-events(fluid)
           v-img(src='../assets/pictures/5.jpg')
         slide(:index='6')
           v-img(src='../assets/pictures/6.jpg')
+        slide(:index='7')
+          v-img(src='../assets/pictures/7.jpg')
+        
     v-col(v-if='!isMobile' lg='3')
       v-img.triangle-img(src='../assets/pt3_2.png')
 </template>
