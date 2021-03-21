@@ -45,7 +45,7 @@ v-container#contact-us(fluid)
               rows="4"
             )
         v-row.pink-btn(justify="center")
-          v-btn(depressed, color="#FF99CC", @click="sendEmail()") Enviar
+          v-btn(depressed, color="#FF99CC", @click="sendEmail") Enviar
     v-col(sm="2", v-if="!isMobile")
       v-img.wave-img(src="../assets/pt6_2.png")
 </template>
@@ -60,13 +60,26 @@ export default {
       axios
         .post(
           "https://gefmeauo7d.execute-api.us-east-2.amazonaws.com/prod/contact/",
-          this.form
-        )
-        .then(
-          function(response) {
-            console.log(response.data);
+          this.form,
+          {
+            "Content-Type": "application/json"
           }
-        );
+        )
+        .then(() => {
+          this.$swal({
+            icon: "success",
+            title: "Email enviado!",
+            text: "Iremos retornar em breve seu contato",
+          });
+        })
+        .catch((e) => {
+          console.log(e)
+          this.$swal({
+            icon: "error",
+            title: "Oops...",
+            text: "Algo deu errado!",
+          });
+        });
     },
   },
   data: () => ({
