@@ -15,9 +15,8 @@ v-container.ma-0#about(fluid ref='about')
       v-img.xs-ball-img(v-if='isMobile' src='../assets/pt2_2.png')
       h1.topic nossa missão
       p 
-        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        | when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        | A missão da Hack Grrrl é tornar o ambiente de hackathons e STEM (Ciência, Tecnologia, Engenharia e Matemática) 
+        | mais acolhedor para mulheres e grupos historicamente não representados.
     v-col(v-if='!isMobile' cols='3')
       v-img.ball-img(src="../assets/pt2_2.png")
 </template>

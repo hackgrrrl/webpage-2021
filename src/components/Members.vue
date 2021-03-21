@@ -9,13 +9,13 @@ v-container.ma-0.pa-0#members(fluid)
                 img(src='../assets/members/bea.jpg')
             span
                 h2 Beatriz
-                p ?
+                p Organizadora
         v-col
             v-avatar(:size='isMobile? 100 : 200')
                 img(src='../assets/members/carol.jpg')
             span
                 h2 Carolina
-                p ?
+                p Organizadora
         v-col
             v-avatar(:size='isMobile? 100 : 200')
                 img(src='../assets/members/lav.jpg')
@@ -27,7 +27,7 @@ v-container.ma-0.pa-0#members(fluid)
                 img(src='../assets/members/may.jpg')
             span
                 h2 Mayara
-                p  ?
+                p  Organizadora
         v-col
             v-avatar(:size='isMobile? 100 : 200')
                 img(src='../assets/members/nat.jpg')
@@ -39,7 +39,7 @@ v-container.ma-0.pa-0#members(fluid)
                 img(src='../assets/members/viv.jpg')
             span
                 h2 Viviane
-                p UX/UI designer & Ilustradora
+                p Organizadora
 </template>
 
 <script>
