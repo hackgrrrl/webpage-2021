@@ -9,6 +9,7 @@
     "deploy": "npm run lint; npm run build; push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-carousel-3d": "^1.0.1",
