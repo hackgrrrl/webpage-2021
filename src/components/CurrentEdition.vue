@@ -6,9 +6,13 @@ v-container#current-edtion(fluid)
     v-col.text(cols='12' sm='8')
       v-img.xs-hill-img(v-if='isMobile' src='../assets/pt5_1.png')
       h2.edition edição 2021
-      h1.informations informações em breve!!
+      h3.informations de 30 de março a 2 de abril
       v-spacer
-      p Quer receber as novidades em primeira mão? Assine nossa newsletter!
+      v-btn.apply-btn(depressed href="http://bit.ly/inscricaoHackGrrrlParticipante" color="#A9B5E8"  type='link' name='mentoras') inscrições para  !{'  '}   #[strong  participantes] 
+      v-spacer
+      v-btn.apply-btn(depressed color="#66CCFF" href="http://bit.ly/inscricaoHackGrrrlMentoras" type='link' name='mentoras') inscrições para!{'      '}  #[strong  mentoras] 
+      v-spacer
+      p.newsletter Quer receber as novidades em primeira mão? Assine nossa newsletter!
       div#mc_embed_signup
         form.validate#mc-embedded-subscribe-form(
           action='https://gmail.us20.list-manage.com/subscribe/post?u=ab3ae93ebf89a83bd05d0b17d&amp;id=ce2d825da7'
@@ -52,8 +56,8 @@ v-container#current-edtion(fluid)
 .edition
   font-size: 2rem
 .informations
-  margin: 5vh
-  font-size: 2.5rem
+  margin: 1vh
+  font-size: 1.5rem
 .text
   margin-top: 2vw
   margin-bottom: 1vw
@@ -79,4 +83,10 @@ v-container#current-edtion(fluid)
   top: 0
 .white-border
   border: 3px solid #FFF
+.apply-btn
+  margin: 0.75vw
+  font-size: 1rem
+  text-transform: lowercase
+.newsletter
+  margin-top: 0.75vw
 </style>
