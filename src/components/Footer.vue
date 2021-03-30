@@ -2,6 +2,9 @@
 v-container.footer(fluid)
     v-row(justify='center' align='center')
         v-col(cols='auto')
+            a(href='https://www.instagram.com/hackgrrrl/') Política de privacidade
+    v-row(justify='center' align='center')
+        v-col(cols='auto')
             v-btn(href='https://www.instagram.com/hackgrrrl/' target="#" icon dark)
                 v-icon(dark)
                     | mdi-instagram
@@ -32,4 +35,7 @@ export default {
     color: #fff
     background-color: #101111
     margin-top: 2vh
+a:link, a:visited
+    color: white
+    text-decoration: none
 </style>

@@ -8,9 +8,9 @@ v-container#current-edtion(fluid)
       h2.edition edição 2021
       h3.informations de 30 de março a 2 de abril
       v-spacer
-      v-btn.apply-btn(depressed href="http://bit.ly/inscricaoHackGrrrlParticipante" color="#A9B5E8"  type='link' name='mentoras') inscrições para  !{'  '}   #[strong  participantes] 
+      v-btn.apply-btn(depressed href="http://bit.ly/inscricaoHackGrrrlParticipante" color="#A9B5E8"  type='link' name='mentoras') inscrições  para<pre> #[strong participantes]</pre>
       v-spacer
-      v-btn.apply-btn(depressed color="#66CCFF" href="http://bit.ly/inscricaoHackGrrrlMentoras" type='link' name='mentoras') inscrições para!{'      '}  #[strong  mentoras] 
+      v-btn.apply-btn(depressed color="#66CCFF" href="http://bit.ly/inscricaoHackGrrrlMentoras" type='link' name='mentoras') inscrições  para<pre> #[strong mentoras]</pre>
       v-spacer
       p.newsletter Quer receber as novidades em primeira mão? Assine nossa newsletter!
       div#mc_embed_signup
