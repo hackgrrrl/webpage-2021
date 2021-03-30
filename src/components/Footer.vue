@@ -2,7 +2,11 @@
 v-container.footer(fluid)
     v-row(justify='center' align='center')
         v-col(cols='auto')
-            a(href='https://www.instagram.com/hackgrrrl/') Política de privacidade
+            a(href='https://bit.ly/privacidadeHackGrrrl2021') Política de privacidade
+        v-col(cols='auto')
+            a(href='https://bit.ly/condutaHackGrrrl2021') Código de conduta
+        v-col(cols='auto')
+            a(href='https://bit.ly/editalHackGrrrl2021') Edital do Evento
     v-row(justify='center' align='center')
         v-col(cols='auto')
             v-btn(href='https://www.instagram.com/hackgrrrl/' target="#" icon dark)
@@ -34,7 +38,7 @@ export default {
     font-size: 0.75rem
     color: #fff
     background-color: #101111
-    margin-top: 2vh
+    margin: 2vh
 a:link, a:visited
     color: white
     text-decoration: none
