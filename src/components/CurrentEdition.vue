@@ -6,7 +6,7 @@ v-container#current-edtion(fluid)
     v-col.text(cols='12' sm='8')
       v-img.xs-hill-img(v-if='isMobile' src='../assets/pt5_1.png')
       h2.edition edição 2021
-      h3.informations de 30 de março a 2 de abril
+      h3.informations de 30 de abril a 2 de maio
       v-spacer
       v-btn.apply-btn(depressed href="http://bit.ly/inscricaoHackGrrrlParticipante" color="#A9B5E8"  type='link' name='mentoras') inscrições  para<pre> #[strong participantes]</pre>
       v-spacer
