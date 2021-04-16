@@ -15,6 +15,8 @@
       v-row
         ContactUs
       v-row
+        Sponsors
+      v-row
         Footer
 </template>
 
@@ -27,7 +29,7 @@ import Members from '@/components/Members'
 import CurrentEdition from '@/components/CurrentEdition'
 import ContactUs from '@/components/ContactUs'
 import Footer from '@/components/Footer'
-
+import Sponsors from '@/components/Sponsors'
 
 export default {
   name: 'App',
@@ -40,6 +42,7 @@ export default {
     Members,
     CurrentEdition,
     ContactUs,
+    Sponsors,
     Footer
   },
   

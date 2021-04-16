@@ -38,7 +38,6 @@ export default {
     font-size: 0.75rem
     color: #fff
     background-color: #101111
-    margin: 2vh
 a:link, a:visited
     color: white
     text-decoration: none
