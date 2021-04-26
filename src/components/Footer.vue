@@ -20,6 +20,10 @@ v-container.footer(fluid)
             v-btn(href='https://www.facebook.com/hackgrrrl'  icon dark)
                 v-icon(dark)
                     | mdi-facebook
+        v-col(cols='auto')
+            v-btn(href='https://www.youtube.com/channel/UCAq130toesQL_rYWjeHGA-w'  icon dark)
+                v-icon(dark)
+                    | mdi-youtube
 </template>
 
 <script>

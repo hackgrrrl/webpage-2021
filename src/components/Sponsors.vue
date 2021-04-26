@@ -8,13 +8,21 @@ v-container#sponsors.ma-0.pa-0(fluid)
         v-col
             center
                 v-img(
+                        contain,
+                        src="../assets/sponsors/globo_white.png",
+                        :max-height="isMobile ? 150 : 200",
+                        :max-width="isMobile ? 150 : 200"
+                )
+        v-col
+            center
+                v-img(
                     contain,
                     src="../assets/sponsors/twilio_white.png",
                     :max-height="isMobile ? 150 : 200",
                     :max-width="isMobile ? 150 : 200"
                 )
     h1.topic Apoio
-    v-row.px-6.ma-0(justify="center")
+    v-row.px-6.ma-0(justify-content="center")
         v-col
             center
                 v-img(
