@@ -21,6 +21,14 @@ v-container#sponsors.ma-0.pa-0(fluid)
                     :max-height="isMobile ? 150 : 200",
                     :max-width="isMobile ? 150 : 200"
                 )
+        v-col
+            center
+                v-img(
+                    contain,
+                    src="../assets/sponsors/ambev_white.png",
+                    :max-height="isMobile ? 150 : 200",
+                    :max-width="isMobile ? 150 : 200"
+                )
     h1.topic Apoio
     v-row.px-6.ma-0(justify-content="center")
         v-col
