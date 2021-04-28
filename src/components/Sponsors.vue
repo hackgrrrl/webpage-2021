@@ -4,7 +4,8 @@ v-container#sponsors.ma-0.pa-0(fluid)
   v-img.hill-img(src="../assets/pt4_2.png")
   v-container.logos
     h1.topic Patrocínio
-    v-row.px-6.ma-0(justify='center')
+    h3.subtopic Ouro
+    v-row.px-6.ma-0.gold(justify='center')
         v-col
             center
                 v-img(
@@ -13,6 +14,8 @@ v-container#sponsors.ma-0.pa-0(fluid)
                         :max-height="isMobile ? 150 : 200",
                         :max-width="isMobile ? 150 : 200"
                 )
+    h3.subtopic Prata
+    v-row.px-6.ma-0.silver(justify='center')
         v-col
             center
                 v-img(
@@ -21,6 +24,16 @@ v-container#sponsors.ma-0.pa-0(fluid)
                     :max-height="isMobile ? 150 : 200",
                     :max-width="isMobile ? 150 : 200"
                 )
+        v-col
+            center
+                v-img(
+                    contain,
+                    src="../assets/sponsors/vinta_white.png",
+                    :max-height="isMobile ? 150 : 200",
+                    :max-width="isMobile ? 150 : 200"
+                )
+    h3.subtopic Bronze
+    v-row.px-6.ma-0.copper(justify='center')
         v-col
             center
                 v-img(
@@ -75,6 +88,9 @@ export default {
 .topic
     padding-top: 5vh
     color: #FFFFFF
+.subtopic
+    padding-top: 5vh
+    color: rgb(255, 153, 204)
 .circle-img
     position: absolute
     width: 4.5%
