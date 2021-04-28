@@ -83,6 +83,9 @@ v-container#current-edtion(fluid)
             )
               v-icon(dark)
                 | mdi-linkedin
+            v-btn(href="https://github.com/ingridpacheco", target="#", icon, dark)
+              v-icon(dark)
+                | mdi-github
       v-spacer
       p.newsletter Quer receber as novidades em primeira mão? Assine nossa newsletter!
       #mc_embed_signup
