@@ -21,16 +21,16 @@ v-container#sponsors.ma-0.pa-0(fluid)
                 v-img(
                     contain,
                     src="../assets/sponsors/twilio_white.png",
-                    :max-height="isMobile ? 150 : 200",
-                    :max-width="isMobile ? 150 : 200"
+                    :max-height="isMobile ? 125 : 175",
+                    :max-width="isMobile ? 125 : 175"
                 )
         v-col
             center
                 v-img(
                     contain,
                     src="../assets/sponsors/vinta_white.png",
-                    :max-height="isMobile ? 150 : 200",
-                    :max-width="isMobile ? 150 : 200"
+                    :max-height="isMobile ? 125 : 175",
+                    :max-width="isMobile ? 125 : 175"
                 )
     h3.subtopic Bronze
     v-row.px-6.ma-0.copper(justify='center')
@@ -39,8 +39,8 @@ v-container#sponsors.ma-0.pa-0(fluid)
                 v-img(
                     contain,
                     src="../assets/sponsors/ambev_white.png",
-                    :max-height="isMobile ? 150 : 200",
-                    :max-width="isMobile ? 150 : 200"
+                    :max-height="isMobile ? 100 : 150",
+                    :max-width="isMobile ? 100 : 150"
                 )
     h1.topic Apoio
     v-row.px-6.ma-0(justify-content="center")
@@ -49,16 +49,24 @@ v-container#sponsors.ma-0.pa-0(fluid)
                 v-img(
                     contain,
                     src="../assets/sponsors/shawee_white.png",
-                    :max-height="isMobile ? 150 : 200",
-                    :max-width="isMobile ? 150 : 200"
+                    :max-height="isMobile ? 100 : 150",
+                    :max-width="isMobile ? 100 : 150"
                 )
         v-col
             center
                 v-img(
                     contain,
                     src="../assets/sponsors/github_white.png",
-                    :max-height="isMobile ? 150 : 200",
-                    :max-width="isMobile ? 150 : 200"
+                    :max-height="isMobile ? 100 : 150",
+                    :max-width="isMobile ? 100 : 150"
+                )
+        v-col
+            center
+                v-img(
+                    contain,
+                    src="../assets/sponsors/developer_white.png",
+                    :max-height="isMobile ? 100 : 150",
+                    :max-width="isMobile ? 100 : 150"
                 )
 </template>
 
