@@ -32,6 +32,30 @@ v-container#sponsors.ma-0.pa-0(fluid)
                     :max-height="isMobile ? 125 : 175",
                     :max-width="isMobile ? 125 : 175"
                 )
+        v-col
+            center
+                v-img(
+                    contain,
+                    src="../assets/sponsors/pitang_white.png",
+                    :max-height="isMobile ? 125 : 175",
+                    :max-width="isMobile ? 125 : 175"
+                )
+        v-col
+            center
+                v-img(
+                    contain,
+                    src="../assets/sponsors/vtex_white.png",
+                    :max-height="isMobile ? 125 : 175",
+                    :max-width="isMobile ? 125 : 175"
+                )
+        v-col
+            center
+                v-img(
+                    contain,
+                    src="../assets/sponsors/shopee_white.png",
+                    :max-height="isMobile ? 125 : 175",
+                    :max-width="isMobile ? 125 : 175"
+                )
     h3.subtopic Bronze
     v-row.px-6.ma-0.copper(justify='center')
         v-col
