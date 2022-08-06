@@ -23,7 +23,7 @@ v-container.ma-0#about(fluid ref='about')
 
 <script>
   export default {
-    name: 'About',
+    name: 'AboutUs',
 
     data: () => ({
       //

@@ -44,7 +44,7 @@ v-container.ma-0.pa-0#members(fluid)
 
 <script>
 export default {
-    name: 'About',
+    name: 'MembersYear',
 
     data: () => ({
     }),

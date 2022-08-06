@@ -28,7 +28,7 @@ v-container.footer(fluid)
 
 <script>
 export default {
-    name: 'Footer',
+    name: 'BottomMenu',
 
     data: () => ({
     }),

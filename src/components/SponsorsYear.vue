@@ -96,7 +96,7 @@ v-container#sponsors.ma-0.pa-0(fluid)
 
 <script>
 export default {
-  name: "Sponsors",
+  name: "SponsorsYear",
 
   data: () => ({}),
 

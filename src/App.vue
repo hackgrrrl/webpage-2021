@@ -1,11 +1,11 @@
 <template  lang="pug">
   v-app
-    Appbar
+    AppBar
     v-main
       v-row
-        Home
+        HomePage
       v-row
-        About
+        AboutUs
       v-row
         PreviousEvents
       v-row
@@ -15,35 +15,35 @@
       v-row
         ContactUs
       v-row
-        Sponsors
+        SponsorsYear
       v-row
-        Footer
+        BottomMenu
 </template>
 
 <script>
-import Appbar from '@/components/Appbar';
-import Home from '@/components/Home'
-import About from '@/components/About'
+import AppBar from '@/components/AppBar';
+import HomePage from '@/components/HomePage'
+import AboutUs from '@/components/AboutUs'
 import PreviousEvents from '@/components/PreviousEvents'
 import Members from '@/components/Members'
 import CurrentEdition from '@/components/CurrentEdition'
 import ContactUs from '@/components/ContactUs'
-import Footer from '@/components/Footer'
-import Sponsors from '@/components/Sponsors'
+import BottomMenu from '@/components/BottomMenu'
+import SponsorsYear from '@/components/SponsorsYear'
 
 export default {
   name: 'App',
 
   components: {
-    Appbar,
-    Home,
-    About,
+    AppBar,
+    HomePage,
+    AboutUs,
     PreviousEvents,
     Members,
     CurrentEdition,
     ContactUs,
-    Sponsors,
-    Footer
+    SponsorsYear,
+    BottomMenu
   },
   
   data: () => ({

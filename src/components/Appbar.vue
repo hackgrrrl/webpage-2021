@@ -39,7 +39,7 @@ div
 
 <script>
   export default {
-    name: 'Appbar',
+    name: 'AppBar',
 
     data: () => ({
       drawer: false
