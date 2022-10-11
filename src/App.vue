@@ -2,32 +2,25 @@
   v-app
     AppBar
     v-main
-      v-row
-        HomePage
-      v-row
-        AboutUs
-      v-row
-        PreviousEvents
-      v-row
-        Members
-      v-row
-        CurrentEdition
-      v-row
-        ContactUs
-      v-row
-        SponsorsYear
-      v-row
-        BottomMenu
+      HomePage
+      AboutUs
+      TimelineEvent
+      Faq
+      Newsletter
+      //- v-row
+      //-   ContactUs
+      SponsorsYear
+      BottomMenu
 </template>
 
 <script>
-import AppBar from '@/components/AppBar';
+import AppBar from '@/components/Appbar';
 import HomePage from '@/components/HomePage'
 import AboutUs from '@/components/AboutUs'
-import PreviousEvents from '@/components/PreviousEvents'
-import Members from '@/components/Members'
-import CurrentEdition from '@/components/CurrentEdition'
-import ContactUs from '@/components/ContactUs'
+import TimelineEvent from '@/components/TimelineEvent'
+import Faq from '@/components/Faq'
+import Newsletter from '@/components/Newsletter'
+// import ContactUs from '@/components/ContactUs'
 import BottomMenu from '@/components/BottomMenu'
 import SponsorsYear from '@/components/SponsorsYear'
 
@@ -38,10 +31,10 @@ export default {
     AppBar,
     HomePage,
     AboutUs,
-    PreviousEvents,
-    Members,
-    CurrentEdition,
-    ContactUs,
+    TimelineEvent,
+    Faq,
+    Newsletter,
+    // ContactUs,
     SponsorsYear,
     BottomMenu
   },
@@ -53,8 +46,13 @@ export default {
 </script>
 <style  lang="sass">
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap')
-
+.v-application 
+  [class*="text-"]
+    font-family: 'Montserrat', sans-serif !important
+  font-family: 'Montserrat', sans-serif !important
+html, body
+  overflow-x: hidden
 #app
-  widht: 100%
-  font-family: 'Montserrat', sans-serif
+  width: 100%
+  font-family: 'Montserrat', sans-serif !important
 </style>

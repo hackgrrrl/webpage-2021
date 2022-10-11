@@ -1,40 +1,46 @@
 <template lang="pug">
 div
-  v-app-bar(v-if='!isMobile' color='#101111' dark app)
-    v-img.mr-2(src='../assets/icon_pc.svg' transition='scale-transition' width='40')
-    // TODO: text in v-tab to lowercase
-    // TODO: put  'fale conosto' on the right
-    v-tabs(centered)
-      v-tab(@click='scrollMeTo("#about")') o que é
-      v-tab(@click='scrollMeTo("#previous-events")') edições anteriores
-      v-tab(@click='scrollMeTo("#members")') quem faz
-      v-tab(@click='scrollMeTo("#current-edtion")') edição 2021
-      v-tab(@click='scrollMeTo("#contact-us")') fale conosco
-  v-app-bar(v-else app color='#101111' dark)
+  v-app-bar.d-none-d-md-block( color='#000' dark app dense)
+    v-tabs.ml-16(centered dark)
+      v-tab(@click='scrollMeTo("#about")') quem somos
+      v-tab(@click='scrollMeTo("#timeline-event")') cronograma
+      v-tab(@click='scrollMeTo("#faq")') faq
+      v-tab(@click='scrollMeTo("#sponsors")') patrocinadores
+    v-spacer
+    v-btn(href='https://www.instagram.com/hackgrrrl/' target="_blank" small min-width="25px" color="white")
+      v-icon(small color="black")
+        | mdi-instagram
+    v-btn.ml-2(href='https://www.facebook.com/hackgrrrl' target="_blank" small min-width="25px" color="white")
+      v-icon(small color="black")
+        | mdi-facebook
+    v-btn.ml-2(href='https://www.linkedin.com/company/hack-grrrl/' target="_blank" small min-width="25px" color="white")
+      v-icon(small color="black")
+        | mdi-linkedin
+    v-btn.ml-2(href='https://www.youtube.com/channel/UCAq130toesQL_rYWjeHGA-w' target="_blank" small min-width="25px" color="white")
+      v-icon(small color="black")
+        | mdi-youtube
+  //- v-app-bar.d-block.d-md-none(app color='#000' dark)
     v-app-bar-nav-icon(@click.stop="drawer = !drawer")
     v-navigation-drawer(
       v-model='drawer'
       app
-      color='#101111'
+      color='#000'
       absolute
       temporary
     )
       v-list(nav dense)
         v-list-item(@click='scrollMeTo("#about")')
           v-list-item-title
-            | o que é
-        v-list-item(@click='scrollMeTo("#previous-events")')
+            | quem somos
+        v-list-item(@click='scrollMeTo("#timeline-event")')
           v-list-item-title
-            | edições anteriores
-        v-list-item(@click='scrollMeTo("#members")')
+            | cronograma
+        v-list-item(@click='scrollMeTo("#faq")')
           v-list-item-title
-            | quem faz
-        v-list-item(@click='scrollMeTo("#current-edtion")')
+            | faq
+        v-list-item(@click='scrollMeTo("#sponsors")')
           v-list-item-title
-            | edição 2021
-        v-list-item(@click='scrollMeTo("#contact-us")')
-          v-list-item-title
-            | fale conosco
+            | patrocinadores
 </template>
 
 <script>
@@ -44,13 +50,6 @@ div
     data: () => ({
       drawer: false
     }),
-
-    computed: {
-      isMobile() {
-        return this.$vuetify.breakpoint.xsOnly
-      }
-    },
-
     methods: {
       scrollMeTo(tab) {
         this.$scrollTo(tab, 500, { easing: 'ease-in-out', offset: -100 })

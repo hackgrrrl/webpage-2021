@@ -1,56 +1,47 @@
 <template lang="pug">
-div.home
-  v-img.ball-image(src='../assets/pt1_1.png')
-  v-img.triangle-image(src='../assets/pt1_2.png')
-  v-img.logo(src='../assets/titulo.png')
-  v-img.wave-image(src='../assets/pt1_3.png')
-  v-img.hill-image(src='../assets/pt1_4.png')
+v-container.ma-0(fluid full-width)
+  v-row
+    v-img(src='@/assets/color-squares-l.png' :aspect-ratio="298/150" max-width="22%")
+  v-row.mt-10.mt-md-n10
+    v-col.d-none.d-md-flex.justify-center(md="6" lg="5")
+      v-img(src='@/assets/icon_pc_2022.png' :aspect-ratio="398/362" max-width="398px")
+    v-col.justify-center.justify-md-start(cols="12" md="6" lg="7")
+      v-row.text-md-left.text-center.mx-3.ml-md-16(justify="center")
+        v-col(cols="12")
+          v-img.mx-auto.mx-md-0(src='@/assets/Logo Minimal.png' :aspect-ratio="426/184" max-width="426px")
+        v-col(cols="12")
+          div.text-h5.text-md-h4.font-weight-bold.mt-7(style="color: #000;") 09 a 11 dezembro de 2022
+        v-row.mt-12.ml-md-6(style="z-index: 2")
+          v-col.mx-auto.mx-md-0(cols="auto")
+            v-btn#button(color="#E34876" tile)
+              | inscreva-se!
+          v-col.mx-auto.ml-md-4(cols="auto")
+            v-btn#button(color="#F0D12D" tile)
+              | regulamento
+  v-row.mt-md-n13(justify="end")
+    v-img(src='@/assets/color-squares-r.png' :aspect-ratio="298/150" max-width="22%")
 </template>
 
 <script>
   export default {
     name: 'HomePage',
 
-    data: () => ({
+   data: () => ({
       //
     }),
   }
 </script>
 <style lang="sass" scoped>
-
-.ball-image
-  position: absolute
-  width: 8.7%
-  height: auto
-  top: 5.9vw
-  left: 4.98%
-.triangle-image
-  position: absolute
-  width: 7.9%
-  height: auto
-  left: 12.59%
-  top: 26.3vw
-.logo
-  position: absolute
-  width: 45%
-  height: auto
-  left: 27.37%
-  top: 8.61vw
-.wave-image
-  position: absolute
-  width: 14.6%
-  height: auto
-  left: 73.94%
-  top: 5.6vw
-.hill-image
-  position: absolute
-  width: 22.6%
-  height: auto
-  right: 0%
-  bottom: 0%
-.home
-  width: 100%
-  position: relative
-  height: 38.4vw
-  background-color: #101111
+@media screen and (min-width: 960px) 
+  #button
+    text-transform: unset !important
+    font-weight: bold
+    font-size: 1.2em
+    box-shadow: -0.3rem 0.3rem black !important
+@media screen and (max-width: 960px)
+  #button
+    text-transform: unset !important
+    font-weight: bold
+    font-size: 1em
+    box-shadow: -0.3rem 0.3rem black !important
 </style>

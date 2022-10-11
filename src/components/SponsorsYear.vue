@@ -1,97 +1,15 @@
 <template lang="pug">
-v-container#sponsors.ma-0.pa-0(fluid)
-  v-img.circle-img(src="../assets/pt4_1.png")
-  v-img.hill-img(src="../assets/pt4_2.png")
-  v-container.logos
-    h1.topic Patrocínio
-    h3.subtopic Ouro
-    v-row.px-6.ma-0.gold(justify='center')
-        v-col
-            center
-                v-img(
-                        contain,
-                        src="../assets/sponsors/globo_white.png",
-                        :max-height="isMobile ? 150 : 200",
-                        :max-width="isMobile ? 150 : 200"
-                )
-    h3.subtopic Prata
-    v-row.px-6.ma-0.silver(justify='center')
-        v-col
-            center
-                v-img(
-                    contain,
-                    src="../assets/sponsors/twilio_white.png",
-                    :max-height="isMobile ? 125 : 175",
-                    :max-width="isMobile ? 125 : 175"
-                )
-        v-col
-            center
-                v-img(
-                    contain,
-                    src="../assets/sponsors/vinta_white.png",
-                    :max-height="isMobile ? 125 : 175",
-                    :max-width="isMobile ? 125 : 175"
-                )
-        v-col
-            center
-                v-img(
-                    contain,
-                    src="../assets/sponsors/pitang_white.png",
-                    :max-height="isMobile ? 125 : 175",
-                    :max-width="isMobile ? 125 : 175"
-                )
-        v-col
-            center
-                v-img(
-                    contain,
-                    src="../assets/sponsors/vtex_white.png",
-                    :max-height="isMobile ? 125 : 175",
-                    :max-width="isMobile ? 125 : 175"
-                )
-        v-col
-            center
-                v-img(
-                    contain,
-                    src="../assets/sponsors/shopee_white.png",
-                    :max-height="isMobile ? 125 : 175",
-                    :max-width="isMobile ? 125 : 175"
-                )
-    h3.subtopic Bronze
-    v-row.px-6.ma-0.copper(justify='center')
-        v-col
-            center
-                v-img(
-                    contain,
-                    src="../assets/sponsors/ambev_white.png",
-                    :max-height="isMobile ? 100 : 150",
-                    :max-width="isMobile ? 100 : 150"
-                )
-    h1.topic Apoio
-    v-row.px-6.ma-0(justify-content="center")
-        v-col
-            center
-                v-img(
-                    contain,
-                    src="../assets/sponsors/shawee_white.png",
-                    :max-height="isMobile ? 100 : 150",
-                    :max-width="isMobile ? 100 : 150"
-                )
-        v-col
-            center
-                v-img(
-                    contain,
-                    src="../assets/sponsors/github_white.png",
-                    :max-height="isMobile ? 100 : 150",
-                    :max-width="isMobile ? 100 : 150"
-                )
-        v-col
-            center
-                v-img(
-                    contain,
-                    src="../assets/sponsors/developer_white.png",
-                    :max-height="isMobile ? 100 : 150",
-                    :max-width="isMobile ? 100 : 150"
-                )
+v-container.ma-0#sponsors(fluid)
+    v-row(justify="center")
+        v-col.mt-4.text-center(cols="12")
+            div.text-h5.font-weight-bold patrocinadores
+        v-col.d-none.d-md-block(style="position: relative")
+            v-img.star-img(src="../assets/star.png" :aspect-ratio="1" width="4.5vw")
+
+    v-container.logos
+        div.text-h6.font-weight-bold nível ouro
+        div.text-h6.font-weight-bold nível prata
+        div.text-h6.font-weight-bold apoio
 </template>
 
 <script>
@@ -111,30 +29,19 @@ export default {
 <style lang="sass" scoped>
 #sponsors
     width: 100%
-    position: relative
-    text-align: center
-    background-color: #101111
+    background-color: #000
     padding-bottom: 8vh
-.logos
-    max-width: 70%
-.topic
-    padding-top: 5vh
     color: #FFFFFF
+.topic
+    text-align: center
+    padding-top: 5vh
 .subtopic
     padding-top: 5vh
-    color: rgb(255, 153, 204)
-.circle-img
+.star-img
     position: absolute
-    width: 4.5%
-    height: auto
-    top: 6vh
-    left: 8vw
-.hill-img
-    position: absolute
-    width: 12%
-    height: auto
-    top: 0%
-    right: 0vw
+    top: -6vh
+    right: 5%
+    transform: rotate(20deg)
 .col
     margin: auto
 </style>
