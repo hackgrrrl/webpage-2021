@@ -4,10 +4,19 @@ v-container.ma-0#timeline-event(fluid)
     v-col.d-flex.justify-center.justify-md-end.mt-3.timeline
       v-layout(column)
         div.text-h5.text-md-h4.font-weight-bold(style="color: #000;") cronograma edição 2022
-        v-timeline
-          v-timeline-item(small color="black" class="text-left") teste
-          v-timeline-item(small color="black" class="text-right") teste 2
-          v-timeline-item(small color="black" class="text-left") teste 3
+        v-timeline.mt-5
+          v-timeline-item(small color="black" class="text-left")
+            h2 11 de outubro
+            div Abertura das inscrições para mentora e participante
+          v-timeline-item(small color="black" class="text-right")
+            h2 19 de outubro
+            div Call for papers: Hack GRRRL workshop
+          v-timeline-item(small color="black" class="text-left")
+            h2 6,7,8 de dezembro
+            div Workshop
+          v-timeline-item(small color="black" class="text-right")
+            h2 9 a 11 de dezembro
+            div Hackathon
     v-col.d-none.d-md-flex.justify-end.pt-0.pr-0(cols="auto")
       v-img(src='@/assets/color-squares-v.png' :aspect-ratio="210/417" max-width="33%" min-width="13vw")
   v-row.mt-n8.mt-md-n16

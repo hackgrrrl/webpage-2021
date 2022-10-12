@@ -4,7 +4,7 @@ v-container.footer(fluid)
         v-col(cols='auto')
             a(href='https://bit.ly/privacidadeHackGrrrl2021') política de privacidade
         v-col(cols='auto')
-            a(href='https://bit.ly/condutaHackGrrrl2021') código de conduta
+            a(href='https://bit.ly/hackgrrrl2022codigo') código de conduta
         v-col(cols='auto')
             a(href='https://bit.ly/editalHackGrrrl2021') edital do evento
 </template>

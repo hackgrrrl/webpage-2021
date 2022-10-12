@@ -38,11 +38,11 @@ export default {
       name: 'Qual será o tema?',
       children: 'O tema do hackathon será divulgado no dia do evento.' 
       },
-      {
-      id: 5,
-      name: 'É preciso já ter um time formado para participar?',
-      children: 'Resposta'
-      },
+      // {
+      // id: 5,
+      // name: 'É preciso já ter um time formado para participar?',
+      // children: 'Resposta'
+      // },
     ]
   }),
 
