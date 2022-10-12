@@ -2,11 +2,11 @@
 v-container.footer(fluid)
     v-row(justify='center' align='center')
         v-col(cols='auto')
-            a(href='https://bit.ly/privacidadeHackGrrrl2021') política de privacidade
+            a(href='https://bit.ly/hackgrrrl2022privacidade') política de privacidade
         v-col(cols='auto')
             a(href='https://bit.ly/hackgrrrl2022codigo') código de conduta
         v-col(cols='auto')
-            a(href='https://bit.ly/editalHackGrrrl2021') edital do evento
+            a(href='https://bit.ly/hackgrrrl2022edital') edital do evento
 </template>
 
 <script>
