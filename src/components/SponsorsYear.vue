@@ -10,7 +10,7 @@ v-container.ma-0#sponsors(fluid)
         v-img.d-block.d-md-none(src='@/assets/sponsors/sponsors2022.png' max-width="60%")
     v-row(justify="center")
         v-btn#button(href="https://forms.gle/Jr83bK4Z5pzCF85RA" target="_blank" color="#E34876" tile)
-            | seja um patriocinador!
+            | seja um patrocinador!
     v-container.logos
         //- div.text-h6.font-weight-bold nível ouro
         //- div.text-h6.font-weight-bold nível prata
