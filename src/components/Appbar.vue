@@ -5,7 +5,7 @@ div
       v-tab(@click='scrollMeTo("#about")') quem somos
       v-tab(@click='scrollMeTo("#timeline-event")') cronograma
       v-tab(@click='scrollMeTo("#faq")') faq
-      v-tab(@click='scrollMeTo("#sponsors")') patrocinadores
+      v-tab(@click='scrollMeTo("#sponsors")') apoio
     v-spacer
     v-btn(href='https://www.instagram.com/hackgrrrl/' target="_blank" small min-width="25px" color="white")
       v-icon(small color="black")
@@ -19,7 +19,7 @@ div
     v-btn.ml-2(href='https://www.youtube.com/channel/UCAq130toesQL_rYWjeHGA-w' target="_blank" small min-width="25px" color="white")
       v-icon(small color="black")
         | mdi-youtube
-  //- v-app-bar.d-block.d-md-none(app color='#000' dark)
+  v-app-bar.d-block.d-md-none(app color='#000' dark)
     v-app-bar-nav-icon(@click.stop="drawer = !drawer")
     v-navigation-drawer(
       v-model='drawer'
@@ -40,7 +40,7 @@ div
             | faq
         v-list-item(@click='scrollMeTo("#sponsors")')
           v-list-item-title
-            | patrocinadores
+            | apoio
 </template>
 
 <script>
